@@ -1,0 +1,27 @@
+div.dashboard {
+    flex-direction: column;
+
+    gap: 30px;
+
+    div.current-cash {
+        flex-direction: column;
+
+        gap: 10px;
+
+        div.months {
+            width: 100%;
+
+            justify-content: space-evenly;
+        }
+
+    }
+
+    div.inflows-outflows {
+        div {
+            gap:5px;
+            flex-direction:column;
+        }
+    }
+
+    border: 1px solid blue;
+}
