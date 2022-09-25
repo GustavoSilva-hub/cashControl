@@ -1,0 +1,21 @@
+div.line-flow{
+    flex-direction:column;
+    gap:2px;
+    
+    border-bottom: 1px solid #000;
+    padding-bottom:4px;
+    
+
+    div{
+        justify-content: space-between;
+    }
+
+    div.secondary-info{
+        font-size:0.7rem;
+    }
+
+    div.primary-info{
+        padding: 0 2px;
+        font-size:1.1rem;
+    }
+}

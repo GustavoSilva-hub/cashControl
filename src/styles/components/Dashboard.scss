@@ -1,17 +1,26 @@
 div.dashboard {
     flex-direction: column;
 
-    gap: 30px;
+    gap: 20px;
 
     div.current-cash {
         flex-direction: column;
 
-        gap: 10px;
-
+        gap: 4px;
+        div.cash{
+            font-size: 1.2rem;
+        }
         div.months {
             width: 100%;
 
             justify-content: space-evenly;
+
+            span.month.current{
+                font-size:1.1rem;
+            }
+            span.month{
+                font-size:0.8rem;
+            }
         }
 
     }
@@ -23,5 +32,5 @@ div.dashboard {
         }
     }
 
-    border: 1px solid blue;
+ 
 }
