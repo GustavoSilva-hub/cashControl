@@ -1,7 +1,7 @@
 div.dashboard {
     flex-direction: column;
 
-    gap: 20px;
+    gap: 15px;
 
     div.current-cash {
         flex-direction: column;
@@ -26,10 +26,33 @@ div.dashboard {
     }
 
     div.inflows-outflows {
-        div {
+        div.inflows, div.outflows {
             gap:5px;
             flex-direction:column;
         }
+
+        div.inflows > div{
+            justify-content: flex-start;
+        }
+
+        div.outflows > div{
+            justify-content: flex-end;
+        }
+
+        div.flow-title{
+            span{
+                font-size:0.8rem;
+            }
+        }
+
+        div.inflows > div.flow-cash{
+            padding-left: 5px;
+        }
+
+        div.outflows > div.flow-cash{
+            padding-right: 5px;
+        }
+       
     }
 
  

@@ -18,18 +18,26 @@ function Dashboard() {
         <div className="inflows-outflows">
             <div className="inflows">
                 <div className="flow-title">
-                    Total de despesas
+                    <span>
+                        Total de despesas
+                    </span>
                 </div>
                 <div className="flow-cash">
-                    -R$ 400,00
+                    <span>
+                        -R$ 40,00
+                    </span> 
                 </div>
             </div>
             <div className="outflows">
                 <div className="flow-title">
-                    Total de receitas
+                    <span>
+                        Total de receitas
+                    </span>
                 </div>
                 <div className="flow-cash">
-                    +R$ 800,00
+                    <span>
+                        +R$ 8000,00
+                    </span>
                 </div>
             </div>
         </div>
