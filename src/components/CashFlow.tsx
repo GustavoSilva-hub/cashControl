@@ -12,6 +12,8 @@ function CashFlow(){
             <LineFlow/>
             <LineFlow/>
             <LineFlow/>
+            <LineFlow/>
+    
         </div>  
     )
 }

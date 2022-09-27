@@ -1,0 +1,39 @@
+div.float{
+    position: fixed;
+
+    width: 60px;
+    height: 60px;
+
+    bottom:30%;
+    right:20px;
+
+    background-color: rgb(22, 209, 162);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 1px -1px 6px #999;//x y blur color
+
+    transform: rotate(45deg);
+    transition: 0.2s;
+    i.one, i.two{
+        background: #fff;
+        height: 5px;
+        width: 100% !important;
+        
+        border-radius:2px;
+    }
+
+    i.one{
+        transform: rotate(45deg) translate(11px, -10px); 
+    }
+
+    i.two{
+        transform: rotate(-45deg) translate(-11px , -10px);
+    }
+}
+
+div.float.opened{
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
