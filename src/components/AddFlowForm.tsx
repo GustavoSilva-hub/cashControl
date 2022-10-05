@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import '../styles/components/AddFlow.scss';
+import '../styles/components/AddFlowForm.scss';
 
-function AddFlow() {
-    const [isOpened, setIsOpened] = useState(false);
-
-    return (
-        <div className={`float ${isOpened?("opened"):""}`} 
-        onClick={()=>{setIsOpened(!isOpened)}}>
-            <i className="one"></i>
-            <i className="two"></i>
-        </div>
-    )
+type AddFlowForm = {
+    isOpened: boolean;
+    setIsOpened: (value: boolean) => void;
 }
 
-function addFlowOptions() {
+function AddFlowForm({ isOpened, setIsOpened }: AddFlowForm) {
     return (
-        <div className="add-in-flow">
-            <span className="title add-flow-title">Novo morado</span>
+        <div className={`add-flow-form ${isOpened ? ("isOpened") : ("")}`}>
+            <span className="title add-flow-title">Novo fluxo de caixas</span>
+            <div className="kind-of-flow">
+                <select id="kind-of-flow">
+                    <option value="0">Receita</option>
+                    <option value="1">Despesa</option>
+                </select>
+            </div>
             <form action="submit">
                 <div className="form-group">
                     <div className="form-item">
@@ -50,4 +49,4 @@ function addFlowOptions() {
     )
 }
 
-export default AddFlow;
+export default AddFlowForm;

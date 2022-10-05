@@ -2,17 +2,17 @@ import React from 'react';
 
 import Dashboard from '../components/Dashboard';
 import CashFlow from '../components/CashFlow';
-import AddFlow from '../components/AddFlow';
+import AddFlowContainer from '../components/AddFlowContainer';
 
 import '../styles/pages/Home.scss';
 
-function Home(){
-    return(
+function Home() {
+    return (
         <div className="home-page">
             <div className="content">
-                <Dashboard/>
-                <CashFlow/>
-                <AddFlow/>
+                <AddFlowContainer />
+                <Dashboard />
+                <CashFlow />
             </div>
         </div>
     )

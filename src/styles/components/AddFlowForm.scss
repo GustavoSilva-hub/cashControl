@@ -1,0 +1,33 @@
+div.add-flow-form {
+    height: 0px;
+    width: 0px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    border: 1px solid blue;
+
+    transition: 0.2s;
+
+    background: rgb(187, 179, 179);
+
+    flex-direction: column;
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%;
+
+        border: 1px solid black;
+    }
+}
+
+div.add-flow-form.isOpened {
+    transition: 0.2s;
+    height: 200px;
+    width: 80vw;
+}

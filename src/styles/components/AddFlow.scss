@@ -1,39 +1,37 @@
-div.float{
-    position: fixed;
+div.add-flow-button {
+    border: 1px solid red;
+    justify-content: flex-end;
+}
+
+div.float {
+    // position: fixed;
 
     width: 60px;
     height: 60px;
 
-    bottom:30%;
-    right:20px;
+    // bottom: 30%;
+    // right: 20px;
 
-    background-color: rgb(22, 209, 162);
-    color: #FFF;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 1px -1px 6px #999;//x y blur color
+    // box-shadow: 1px -1px 6px #999; //x y blur color
 
-    transform: rotate(45deg);
+    border: 1px solid black;
+
     transition: 0.2s;
-    i.one, i.two{
-        background: #fff;
-        height: 5px;
-        width: 100% !important;
-        
-        border-radius:2px;
-    }
 
-    i.one{
-        transform: rotate(45deg) translate(11px, -10px); 
-    }
+    cursor: pointer;
 
-    i.two{
-        transform: rotate(-45deg) translate(-11px , -10px);
+    img.add-flow-icon {
+        color: #fff;
+
+        // border: 1px solid red;
     }
 }
 
-div.float.opened{
-    transform: rotate(90deg);
+div.float.opened {
+    transform: rotate(135deg);
     transition: 0.2s;
 }
-
